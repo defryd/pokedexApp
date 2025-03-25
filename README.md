@@ -1,5 +1,6 @@
 # POKEDEX APP 
 ![pokeball](https://github.com/user-attachments/assets/a0c49d1f-cc63-4b3d-bef2-cd414a3c504b)
+
 Esta es una aplicación Pokedex que permite consultar, visualizar y filtrar Pokémon por ID o nombre. Para su desarrollo, se implementaron diversas tecnologías y conceptos clave como:
 
 - Navegación con React Navigation
