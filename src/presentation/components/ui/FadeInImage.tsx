@@ -20,14 +20,18 @@ export const FadeInImage = ({ uri, style }: Props) => {
     const isDisposed = useRef(false);
 
     useEffect(() => {
-        isDisposed.current = true;
+        isDisposed.current = false; // El componente está montado
+
+        return () => {
+            isDisposed.current = true; // El componente se desmonta
+        };
     }, []);
 
     const onLoadEnd = () => {
-        if (isDisposed.current) return;
+        if (isDisposed.current) return; // Evita actualizar el estado si el componente está desmontado
         fadeIn({});
         setIsLoading(false);
-    }
+    };
 
     return (
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
@@ -41,7 +45,7 @@ export const FadeInImage = ({ uri, style }: Props) => {
 
             <Animated.Image
                 source={{ uri }}
-                onLoadEnd={ onLoadEnd }
+                onLoadEnd={onLoadEnd}
                 style={[style, { opacity: animatedOpacity }]}
             />
         </View>

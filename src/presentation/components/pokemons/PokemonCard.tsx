@@ -36,6 +36,10 @@ export const PokemonCard = ({ pokemon }: Props) => {
 
                 {/* POkemon Image */}
                 <FadeInImage uri={pokemon.avatar} style={styles.pokemonImage} />
+                {/* <Image
+                    source={{ uri: pokemon.avatar }}
+                    style={styles.pokemonImage}
+                /> */}
 
                 {/* Types */}
                 <Text style={[styles.name, { marginTop: 35 }]}>{pokemon.types[0]}</Text>
