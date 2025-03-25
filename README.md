@@ -1,3 +1,21 @@
+# POKEDEX APP
+Esta es una aplicación Pokedex que permite consultar, visualizar y filtrar Pokémon por ID o nombre. Para su desarrollo, se implementaron diversas tecnologías y conceptos clave como:
+
+- Navegación con React Navigation
+- Pantallas de listado y detalle de Pokémon
+- Consumo de APIs con Axios
+- Patrón de Capa de Transformación (Mapper Layer)
+- Gestión de datos con TanStack Query
+- useQuery, useInfiniteQuery y manejo de cache
+- Carga perezosa de imagenes(Hook)
+
+Para el componente de búsqueda se uso:
+- Múltiples useQueries
+- Búsquedas por ID y Nombre
+- Debounce manual(Hook)
+
+# Generic project readme
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
