@@ -7,10 +7,10 @@ export interface Pokemon {
 
     // color: string;
 
-    // games: string[];
-    // stats: Stat[];
-    // abilities: string[];
-    // moves: Move[];
+    games?: string[];
+    stats?: Stat[];
+    abilities?: string[];
+    moves?: Move[];
 }
 
 export interface Stat {
